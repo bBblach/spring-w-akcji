@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Spittles</title>
+
+</head>
+<body>
+    <h1> Spittles cooming soon</h1>
+    <table>
+        <th:block th:each="spittle : ${spittleList}">
+            <tr>
+                <td th:text="${spittle.message}">...</td>
+                <td th:text="${spittle.time}">...</td>
+            </tr>
+        </th:block>
+    </table>
+</body>
+</html>
